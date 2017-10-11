@@ -10,9 +10,6 @@ public class FromDecimal {
 
     int num = Integer.parseInt(s);
 
-    System.out.println(num);
-    System.out.println(TARGET_BASE);
-
     int n = 0;
     while (num >= Math.pow(TARGET_BASE, n)) {
       n++;
@@ -21,7 +18,6 @@ public class FromDecimal {
     int[] targetNum = new int[n];
 
     convertBase(TARGET_BASE, num, targetNum);
-    System.out.println(Arrays.toString(targetNum));
 
     String finalNum = "";
 
